@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #2d3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.miembro {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s;
+}
+
+.miembro:hover {
+    box-shadow: 0 4px 24px rgba(44,62,80,0.15);
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 2rem;
+    border: 3px solid #2d3e50;
+    background: #eaeaea;
+}
+
+.info h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+    color: #2d3e50;
+}
+
+.info p {
+    margin: 0;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    .miembro {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .foto {
+        margin: 0 0 1rem
